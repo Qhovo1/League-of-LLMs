@@ -1,11 +1,11 @@
-# LLM-Crowdsourced
+# League of LLMs
 
-**Full Paper Title**: LLM-Crowdsourced: A Benchmark-Free Paradigm for Mutual Evaluation of Large Language Models
+**Full Paper Title**: League of LLMs: A Benchmark-Free Paradigm for Mutual Evaluation of Large Language Models
  **Paper Link**: https://arxiv.org/abs/2507.22359
 
 ## Project Overview
 
-LLM-Crowdsourced is an open-source experimental platform for large language model (LLM) mutual evaluation. It proposes a novel “benchmark-free” paradigm, in which multiple mainstream LLMs automatically generate questions for each other, answer each other's questions, and mutually evaluate each other's answers. This approach enables automatic generation of high-quality evaluation data and rankings without the need for human annotation or traditional benchmarks.
+League of LLMs is an open-source experimental platform for large language model (LLM) mutual evaluation. It proposes a novel “benchmark-free” paradigm, in which multiple mainstream LLMs automatically generate questions for each other, answer each other's questions, and mutually evaluate each other's answers. This approach enables automatic generation of high-quality evaluation data and rankings without the need for human annotation or traditional benchmarks.
  The project supports both mathematics and programming experiments, automatically generates experimental reports and visualized results, and is suitable for LLM capability evaluation, comparative analysis, and academic research.
 
 ![motivations](assets/motivations.png)
@@ -15,7 +15,7 @@ LLM-Crowdsourced is an open-source experimental platform for large language mode
 ## Directory Structure
 
 ```
-LLM-Crowdsourced/
+League of LLMs/
 │
 ├── exp/                        # Main experiment scripts and configuration
 │   ├── config.py               # Config file: set API, LLMs, parameters, etc.
@@ -114,24 +114,11 @@ LLM-Crowdsourced/
 
 ![score](assets/score.png)
 
-------
-
-## Paper Citation
-
-If this project is helpful for your work, please consider citing our paper:
-
-```
-@article{guo2025llm,
-  title={LLM-Crowdsourced: A Benchmark-Free Paradigm for Mutual Evaluation of Large Language Models},
-  author={Guo, Qianhong and Xie, Wei and Cai, Xiaofang and Wang, Enze and Ma, Shuoyoucheng and Chen, Kai and Wang, Xiaofeng and Wang, Baosheng},
-  journal={arXiv preprint arXiv:2507.22359},
-  year={2025}
-}
-```
 
 ------
 
 ## Contact & Contribution
 
 - Suggestions, feedback, and collaboration are very welcome!
+
 - Contact: [guoqianh1@nudt.edu.cn](mailto:guoqianh1@nudt.edu.cn)
