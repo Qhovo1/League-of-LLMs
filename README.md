@@ -1,11 +1,9 @@
-# ⭐ League of LLMs 
+# ⭐ League of LLMs
 
 **Paper Title**: League of LLMs: A Benchmark-Free Paradigm for Mutual Evaluation of Large Language Models
 **Arxiv**: https://arxiv.org/abs/2507.22359
 
-------
-
-## ✨ Project Overview 
+## ✨ Project Overview
 
 We introduce League of LLMs (LOL), a novel benchmark-free evaluation paradigm built on a closed-loop of mutual questioning, answering, and evaluation among LLMs. 
 
@@ -17,13 +15,11 @@ In each round, LLMs take turns (i) generating questions, (ii) answering independ
 
 ![motivations](assets/motivations.png)
 
-## ⚔️ Methodology 
+## ⚔️ Methodology
 
 ![methodology](assets/methodology.png)
 
-------
-
-## 📁 Repository Structure 
+## 📁 Structure
 
 ```
 League of LLMs/
@@ -44,9 +40,7 @@ League of LLMs/
 └── Readme.md
 ```
 
-------
-
-## ⚙️ Configuration 
+## ⚙️ Configuration
 
 Edit `exp/config.py`:
 
@@ -55,9 +49,7 @@ Edit `exp/config.py`:
 - `MODELS`: model list to evaluate 🤖
 - (optional) `RESULTS_DIR`, `DEFAULT_TEMPERATURE`, `STREAMING` 🛠️
 
-------
-
-## 🚀 Quick Start 
+## 🚀 Quick Start
 
 We recommend Python 3.9+.
 
@@ -81,9 +73,7 @@ python exp/programming_experiment.py
 
 Outputs will be saved under `RESULTS_DIR` (default: `results/`) with a timestamped experiment folder.
 
-------
-
-## 📈 Experimental Results 
+## 📈 Results
 
 **Math results**
 
@@ -96,8 +86,6 @@ Outputs will be saved under `RESULTS_DIR` (default: `results/`) with a timestamp
 **Spearman correlation heatmaps**
 ![math_spearman_heatmap](assets/math_spearman_heatmap.png)
 ![programming_spearman_heatmap](assets/programming_spearman_heatmap.png)
-
-------
 
 ## 🔗 Citation
 
@@ -112,7 +100,7 @@ If you find our work helpful, please cite us.
 }
 ```
 
-## 🤝 Contact 
+## 🤝 Contact
 
 - Suggestions, feedback, and collaboration are very welcome!
 
