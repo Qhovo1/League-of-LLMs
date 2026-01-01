@@ -77,7 +77,7 @@ Outputs will be saved under `RESULTS_DIR` (default: `results/`) with a timestamp
 
 **Math results**
 
-![Radar](assets/Radar.png)
+![Radar](assets/radar.png)
 
 **Programming results**
 
