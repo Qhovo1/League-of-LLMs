@@ -1,13 +1,14 @@
 # ⭐ League of LLMs
 
 **Paper Title**: League of LLMs: A Benchmark-Free Paradigm for Mutual Evaluation of Large Language Models
+
 **Arxiv**: https://arxiv.org/abs/2507.22359
 
 ## ✨ Project Overview
 
 We introduce League of LLMs (LOL), a novel benchmark-free evaluation paradigm built on a closed-loop of mutual questioning, answering, and evaluation among LLMs. 
 
-LOL organizes multiple LLMs into a self-governed league, where they compete for leaderboard positions across multiple rounds. 
+LOL organizes multiple LLMs into a self-governed league, where they compete for leaderboard positions across multiple rounds.
 
 In each round, LLMs take turns (i) generating questions, (ii) answering independently, and (iii) mutually evaluating one another, with the final ranking computed by aggregating the resulting scores.
 
@@ -92,11 +93,14 @@ Outputs will be saved under `RESULTS_DIR` (default: `results/`) with a timestamp
 If you find our work helpful, please cite us.
 
 ```
-@article{guo2025llm,
-  title={LLM-Crowdsourced: A Benchmark-Free Paradigm for Mutual Evaluation of Large Language Models},
-  author={Guo, Qianhong and Xie, Wei and Cai, Xiaofang and Wang, Enze and Ma, Shuoyoucheng and Chen, Kai and Wang, Xiaofeng and Wang, Baosheng},
-  journal={arXiv preprint arXiv:2507.22359},
-  year={2025}
+@misc{guo2026leaguellmsbenchmarkfreeparadigm,
+      title={League of LLMs: A Benchmark-Free Paradigm for Mutual Evaluation of Large Language Models}, 
+      author={Qianhong Guo and Wei Xie and Xiaofang Cai and Enze Wang and Shuoyoucheng Ma and Xiaobing Sun and Tian Xia and Kai Chen and Xiaofeng Wang and Baosheng Wang},
+      year={2026},
+      eprint={2507.22359},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2507.22359}, 
 }
 ```
 
