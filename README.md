@@ -2,11 +2,13 @@
 
 **Paper Title**: League of LLMs: A Benchmark-Free Paradigm for Mutual Evaluation of Large Language Models
 
-**Arxiv**: https://arxiv.org/abs/2507.22359
+**Paper Link**: https://arxiv.org/abs/2507.22359
+
+**Paper Website:** https://qhovo1.github.io/League-of-LLMs
 
 ## ✨ Project Overview
 
-We introduce League of LLMs (LOL), a novel benchmark-free evaluation paradigm built on a closed-loop of mutual questioning, answering, and evaluation among LLMs. 
+League of LLMs (LOL) is a novel benchmark-free evaluation paradigm built on a closed-loop of mutual questioning, answering, and evaluation among LLMs. 
 
 LOL organizes multiple LLMs into a self-governed league, where they compete for leaderboard positions across multiple rounds.
 
@@ -14,23 +16,27 @@ In each round, LLMs take turns (i) generating questions, (ii) answering independ
 
 ## 🤖 Motivation
 
-![motivations](assets/motivations.png)
+![motivations](figures/motivations.png)
+
+Figure 1: **Mainstream LLM evaluation paradigms vs. League of LLMs (LOL).** Compared under four core criteria: Dynamic, Transparent, Objective, and Professional.
 
 ## ⚔️ Methodology
 
-![methodology](assets/methodology.png)
+![methodology](figures/methodology.png)
+
+Figure 2: **Overview of the League of LLMs evaluation pipeline.** It consists of four phases: Generate Question, Answer Independently, Evaluate Mutually, and Update Ranking.
 
 ## 📁 Structure
 
 ```
 League of LLMs/
 │
-├── exp/
+├── core/
 │   ├── models.py
 │   ├── config.py
 │   ├── math_experiment.py
 │   └── programming_experiment.py
-├── assets/
+├── figures/
 │   ├── methodology.png
 │   ├── motivations.png
 │   ├── Radar.png
@@ -43,7 +49,7 @@ League of LLMs/
 
 ## ⚙️ Configuration
 
-Edit `exp/config.py`:
+Edit `core/config.py`:
 
 - `API_KEY`: your API key 🔑
 - `API_BASE`: OpenAI-compatible base URL (the code calls `POST {API_BASE}/chat/completions`) 🌐
@@ -63,13 +69,13 @@ pip install -r requirements.txt
 Run mathematics experiment:
 
 ```bash
-python exp/math_experiment.py
+python core/math_experiment.py
 ```
 
 Run programming experiment:
 
 ```bash
-python exp/programming_experiment.py
+python core/programming_experiment.py
 ```
 
 Outputs will be saved under `RESULTS_DIR` (default: `results/`) with a timestamped experiment folder.
@@ -78,15 +84,15 @@ Outputs will be saved under `RESULTS_DIR` (default: `results/`) with a timestamp
 
 **Math results**
 
-![Radar](assets/radar.png)
+![Radar](figures/radar.png)
 
 **Programming results**
 
-![score](assets/score.png)
+![score](figures/score.png)
 
 **Spearman correlation heatmaps**
-![math_spearman_heatmap](assets/math_spearman_heatmap.png)
-![programming_spearman_heatmap](assets/programming_spearman_heatmap.png)
+![math_spearman_heatmap](figures/math_spearman_heatmap.png)
+![programming_spearman_heatmap](figures/programming_spearman_heatmap.png)
 
 ## 🔗 Citation
 
